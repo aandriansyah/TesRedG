@@ -1,0 +1,122 @@
+.navbar {
+  background-color: #1d81e6; /* Warna latar belakang */
+  color: #d11f1f; /* Warna teks */
+}
+
+/* Efek hover pada tautan navbar */
+.navbar-nav .nav-link:hover {
+  color: #000000; /* Warna teks saat dihover */
+  transform: scale(1.1)
+}
+
+/* CSS untuk latar belakang navbar dalam burger menu */
+.navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0); /* Ganti dengan warna latar belakang yang Anda inginkan */
+  border-radius: 4px; /* Untuk sudut yang lebih lembut */
+}
+   
+   /* CSS untuk menyembunyikan navbar */
+   .navbar.fixed-top.navbar-scroll {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* CSS untuk menampilkan kembali navbar saat digulir ke atas */
+  .navbar.fixed-top.navbar-show {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Mengubah warna latar belakang tombol toggle saat dihover */
+#navbarToggleBtn:hover {
+  background-color: rgb(243, 106, 106);
+}
+
+/* Efek hover pada logo */
+.navbar-brand img:hover {
+  transform: scale(1.1); /* Memperbesar logo saat dihover */
+}
+
+/* Mengatur transisi untuk efek hover */
+.navbar-brand img, .navbar-nav .nav-link {
+  transition: 0.3s ease; /* Efek transisi 0.3 detik */
+}
+
+/* Mengatur warna teks pada tombol toggle saat dihover */
+#navbarToggleBtn:hover .navbar-toggler-icon {
+  color: #007bff;
+}
+
+/* Mengatur warna teks tautan aktif */
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Warna teks tautan aktif */
+}
+
+/* Mengatur warna teks tautan pada scrollspy aktif */
+body[data-spy="scroll"] .nav-item.nav-link.active {
+  color: #007bff; /* Warna teks tautan aktif */
+}
+
+
+/* Layanan Fixs responsive */
+.aspect-ratio-box {
+  position: relative;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.aspect-ratio-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* end */
+
+/* CSS untuk card pada tampilan desktop */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek animasi ketika hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan card */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Mengangkat card sedikit ketika dihover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan card yang lebih menonjol saat dihover */
+}
+
+/* CSS untuk card pada tampilan mobile dan tablet */
+.carousel-item .card {
+  margin: 0 auto; /* Posisi card di tengah slide */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek animasi ketika hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan card */
+}
+
+.carousel-item .card:hover {
+  transform: scale(1.05); /* Memperbesar card ketika dihover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan card yang lebih menonjol saat dihover */
+}
+
+/* CSS untuk card pada Slide 1 */
+.carousel-item.active .card {
+  margin-right:2px; /* Margin kanan pada card di Slide 1 */
+}
+
+/* CSS untuk card pada Slide 2 */
+.carousel-item.next .card {
+  margin-left: 2px; /* Margin kiri pada card di Slide 2 */
+}
+
+/* CSS untuk ukuran teks pada tampilan desktop */
+.card-title,
+.card-text {
+  font-size: 17px; /* Ukuran teks pada desktop */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 767px) {
+  .card-title,
+  .card-text {
+    font-size: 11px; /* Ukuran teks pada mobile */
+  }
+}

@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REDG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+  
+</head>
+  <body>
+    <!-- ======================================== -->
+    <!--                TOP BAR                   -->
+    <!-- ======================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top";>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggleBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="order: 2;">
+            <img src="assets/logo.png" alt="" style="width: 6vw;">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" style="order: 1;">
+          <div class="navbar-nav">
+            <a class="nav-link " href="#home">Home</a>
+            <a class="nav-link " href="#profil">Profil</a>
+            <a class="nav-link " href="#layanan">Layanan</a>
+            <a class="nav-link " href="#struktur">Struktur Organisasi</a>
+            <a class="nav-link " href="#kontak">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Masukkan referensi Bootstrap 5 JavaScript dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- Tambah JavaScript kustom -->
+    <script>
+      // JavaScript untuk mengelola perilaku navbar saat di-scroll
+      $(document).ready(function () {
+        var previousScroll = 0;
+        $(window).scroll(function () {
+          var currentScroll = $(this).scrollTop();
+          if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
+            if (currentScroll > previousScroll) {
+              // Scroll ke bawah
+              $(".navbar").removeClass("navbar-show").addClass("navbar-scroll");
+            } else {
+              // Scroll ke atas
+              $(".navbar").removeClass("navbar-scroll").addClass("navbar-show");
+            }
+            previousScroll = currentScroll;
+          }
+        });
+      });
+      // JavaScript untuk menutup burger menu ketika menu di dalamnya diklik
+$(".nav-link").click(function () {
+  if ($("#navbarNavAltMarkup").hasClass("show")) {
+    $("#navbarNavAltMarkup").collapse("hide");
+  }
+});
+
+    </script>
+
+    <!-- ======================================== -->
+    <!--            END TOP BAR                   -->
+    <!-- ======================================== -->
+
+    <section class="hero-section"  id="home" style="margin-top: 150px;">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="hero-content">
+              <h1 class="mb-4">PT RAHARJA ENERGI DIGDAYA GROUP</h1>
+              <p class="mb-4">We Make The Best Tradition For Services, Developer & Management</p>          
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/People.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<br><br><br><br><br><br>
+<section class="profil-section" id="profil">
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col text-center">
+              <h1 class="mb-4">PROFIL PERUSAHAAN</h1>
+              <p>PT RAHARJA ENERGI DIGDAYA GROUP didirikan pada tanggal 19 Januari 2023 dan bergerak di bidang ekspansi bisnis di sektor General Public Services sebagai penyedia Sumber Daya Manusia & Manajemen Fungsi Sumber Daya Manusia. Kami juga bergerak dalam konstruksi bangunan lainnya & pabrikasi. Dengan dukungan penuh dari mitra, kami memiliki komitmen dan kewajiban untuk meningkatkan kepercayaan, kualitas, dan profesionalisme sumber daya manusia dalam upaya untuk memenuhi kebutuhan dan keinginan pelanggan.</p>
+          </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card h-100" style="background-color: #007BFF; color: white;">
+                <div class="card-body">
+                    <h4 class="card-title">VISI</h4>
+                    <p class="card-text">Menjadi perusahaan terbaik di bidang General Public Services dan konstruksi nasional maupun internasional berbasiskan pada pengembangan teknologi informasi. Meningkatkan kesejahteraan masyarakat melalui Corporate Social Responsibility secara berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col-md-4">
+            <div class="card h-100" style="background-color: #28A745; color: white;">
+                <div class="card-body">
+                    <h4 class="card-title">MISI</h4>
+                    <p class="card-text">Memberikan kualitas terbaik dalam bidang konstruksi, pembangunan, dan pengembangan kawasan Pabrikasi. Meningkatkan dan menyediakan sumber daya manusia yang jujur, terampil, dan profesional di bidangnya.</p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col-md-4">
+            <div class="card h-100" style="background-color: #DC3545; color: white;">
+                <div class="card-body">
+                    <h4 class="card-title">TUJUAN</h4>
+                    <p class="card-text">Memberikan kebanggaan dan kebahagiaan bagi shareholder, stakeholder, dan masyarakat di Indonesia.</p>
+                  </div>
+            </div>
+        </div>
+      </div>
+      
+</section>
+
+<br><br><br><br><br><br>
+
+<section class="layanan-section" id=layanan padding: 50px 0; background: linear-gradient(135deg, #2980B9, #6DD5FA);>
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: #020202;">LAYANAN JASA PERUSAHAAN</h2>
+    <div class="row row-cols-1 g-4">
+      <div class="col-6">
+        <div class="card border-0 shadow p-2" style="background-color: #fff; color: #333;">
+          <div class="aspect-ratio-box">
+            <img src="assets/perumahan.jpeg" class="card-img-top img-fluid" alt="Perumahan">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title col text-center">Perumahan</h5>
+           <div class="col text-center"><button type="button" class="btn btn-outline-primary btn-sm col" data-bs-toggle="modal" data-bs-target="#boxperumahan">
+              Lihat Galeri
+            </button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="card border-0 shadow p-2" style="background-color: #fff; color: #333;">
+          <div class="aspect-ratio-box">
+            <img src="assets/Sapi/susi.jpg" class="card-img-top img-fluid" alt="Peternakan">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title col text-center">Peternakan</h5>
+            <div class="col text-center"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#peternakan">
+              Lihat Galeri
+            </button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="card border-0 shadow p-2" style="background-color: #fff; color: #333;">
+          <div class="aspect-ratio-box">
+            <img src="assets/Otsourcing.jpg" class="card-img-top img-fluid" alt="Outsourcing">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title col text-center" >Outsourcing</h5>
+            <div class="col text-center"> <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#otsorcing">
+              Lihat Galeri
+            </button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="card border-0 shadow p-2" style="background-color: #fff; color: #333;">
+          <div class="aspect-ratio-box">
+            <img src="assets/konveksi.jpeg" class="card-img-top img-fluid" alt="Konveksi">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title  col text-center">Konveksi</h5>
+            <div class="col text-center"><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#konveksi">
+              Lihat Galeri
+            </button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   
+        <!-- ================================================= -->
+        <!--                MODAL BOX PELAYANAN                -->
+        <!-- ================================================= -->
+
+<!-- peternakan -->
+
+<div class="modal fade" id="peternakan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Galery Peternakan Sapi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container px-2">
+          <div class="row gx-5">
+            <div class="col px-5">
+             <div class="p-3 border border-dark bg-white">Perusahaan kami menyediakan layanan dan solusi untuk membantu peternak sapi dalam mengelola ternak mereka secara efisien dan menghasilkan produk-produk berkualitas. Berikut adalah deskripsi tentang layanan jasa perusahaan di bidang peternakan sapi:
+              Perusahaan layanan peternakan sapi biasanya menyediakan layanan konsultasi yang melibatkan para ahli peternakan. Mereka membantu peternak dalam merencanakan, membangun, dan mengelola peternakan sapi dengan efisien. Konsultan dapat memberikan saran tentang nutrisi, manajemen ternak, perawatan kesehatan, dan strategi pemuliaan sapi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- Gallery peternakan-->
+     <div class="container px-5">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="height: auto;">
+    <img
+      src="assets/Sapi/joni.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Joni"
+    />
+
+    <img
+      src="assets/Sapi/susi.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Susi"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Sapi/asep.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Asep"
+    />
+
+    <img
+      src="/assets/Sapi/karim.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="karim"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Sapi/cecep.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="/assets/Sapi/siska.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- end gallery peternakan -->
+
+
+<!-- perumahan-->
+<div class="modal fade" id="boxperumahan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title" id="staticBackdropLabel"> Galery Perumahan Grand Assalam</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container px-2">
+          <div class="row gx-5">
+            <div class="col px-5">
+             <div class="p-3 border border-dark bg-white">Perumahan Grand Assalam adalah perumahan yang berkomitmen untuk memberikan solusi hunian yang berkualitas tinggi bagi masyarakat. Dengan visi untuk menciptakan rumah impian bagi setiap individu, Grand Assalam telah membangun reputasi yang kuat dalam industri perumahan.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- Gallery perumahan-->
+     <div class="container px-5">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="height: auto;">
+    <img
+      src="assets/Perumahan/r (1).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Joni"
+    />
+
+    <img
+      src="assets/Perumahan/r (2).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Susi"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Perumahan/r (3).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Asep"
+    />
+
+    <img
+      src="/assets/Perumahan/r (4).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="karim"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Perumahan/r (5).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="/assets/Perumahan/r (6).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- otsorcing -->
+<div class="modal fade" id="otsorcing" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Galery Outsourcing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container px-2">
+          <div class="row gx-5">
+            <div class="col px-5">
+             <div class="p-3 border border-dark bg-white"> Perusahaan kami menghadirkan berbagai solusi dalam bidang Outsourcing untuk memenuhi kebutuhan bisnis dan operasional perusahaan Anda. Layanan jasa outsourcing dari Red-G dirancang untuk membantu perusahaan fokus pada inti bisnis, sambil mengoptimalkan efisiensi dan produktivitas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- Gallery Otsorcing-->
+     <div class="container px-5">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="height: auto;">
+    <img
+      src="assets/Sapi/joni.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Joni"
+    />
+
+    <img
+      src="assets/Sapi/susi.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Susi"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Sapi/asep.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Asep"
+    />
+
+    <img
+      src="/assets/Sapi/karim.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="karim"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Sapi/cecep.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="/assets/Sapi/siska.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- konveksi -->
+<div class="modal fade" id="konveksi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Galeri Konveksi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container px-2">
+          <div class="row gx-5">
+            <div class="col px-5">
+             <div class="p-3 border border-dark bg-white">Perusahaan kami menyediakan layanan jasa konveksi yang khusus berfokus pada produksi dan pembuatan celana anak berkualitas tinggi. Kami memahami betapa pentingnya pakaian yang nyaman dan aman untuk anak-anak Anda, itulah mengapa kami berkomitmen untuk menyediakan celana anak yang tidak hanya modis tetapi juga memperhatikan aspek kenyamanan dan keamanan.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!-- Gallery Konveksi-->
+     <div class="container px-5">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="height: auto;">
+    <img
+      src="assets/Konveksi/K (1).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Joni"
+    />
+
+    <img
+      src="assets/Konveksi/K (2).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Susi"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Konveksi/K (3).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Asep"
+    />
+
+    <img
+      src="/assets/Konveksi/K (4).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="karim"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/Konveksi/K (5).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="/assets/Konveksi/K (6).jpeg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+        <!-- ================================================= -->
+        <!--              END MODAL BOX PELAYANAN                -->
+        <!-- ================================================= -->
+ </section>
+
+<br><br><br>
+  
+<section class="struktur-section" id="struktur">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">STRUKTUR ORGANISASI PERUSAHAAN</h1>
+    <!-- Card Profil Desktop -->
+    <div class="row row-cols-1 row-cols-md-5 g-4 d-none d-md-flex">
+
+      <!-- Card Profil -->
+      <div class="col">
+        <div class="card">
+          <img src="assets/profil.png" class="card-img-top" alt="Profil 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">RUDIYATNA</h5>
+            <p class="card-text">DIREKTUR</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Profil 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="assets/profil.png" class="card-img-top" alt="Profil 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">PUTRA DELIMA</h5>
+            <p class="card-text">PROJECT MANAGER</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Profil 3 -->
+      <div class="col">
+        <div class="card">
+          <img src="assets/profil.png" class="card-img-top" alt="Profil 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">TOPAN SC</h5>
+            <p class="card-text">HR & GA</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Profil 4 -->
+      <div class="col">
+        <div class="card">
+          <img src="assets/profil.png" class="card-img-top" alt="Profil 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">ASEP BAHTIAR</h5>
+            <p class="card-text">MARKTING PLAN</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Profil 5 -->
+      <div class="col">
+        <div class="card">
+          <img src="assets/profil.png" class="card-img-top" alt="Profil 5">
+          <div class="card-body text-center">
+            <h5 class="card-title">SURYA</h5>
+            <p class="card-text" style="font-size: 15px;">FINANCE & ACCOUNTING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carousel untuk Layar Mobile dan Tablet -->
+    <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Card Profil 1 -->
+            <div class="col-4">
+              <div class="card">
+                <img src="assets/profil.png" class="card-img-top" alt="Profil 1">
+                <div class="card-body text-center">
+                  <h5 class="card-title">RUDIYATNA</h5>
+                  <p class="card-text">DIREKTUR</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Profil 2 -->
+            <div class="col-4">
+              <div class="card">
+                <img src="assets/profil.png" class="card-img-top" alt="Profil 2">
+                <div class="card-body text-center">
+                  <h5 class="card-title">PUTRA DELIMA</h5>
+                  <p class="card-text">PROJECT MANAGER</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Profil 3 -->
+            <div class="col-4">
+              <div class="card">
+                <img src="assets/profil.png" class="card-img-top" alt="Profil 3">
+                <div class="card-body text-center">
+                  <h5 class="card-title">TOPAN SC</h5>
+                  <p class="card-text">HR & GA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center justify-content-center">
+            <!-- Card Profil 4 -->
+            <div class="col-4">
+              <div class="card">
+                <img src="assets/profil.png" class="card-img-top" alt="Profil 4">
+                <div class="card-body text-center">
+                  <h5 class="card-title">ASEP BAHTIAR</h5>
+                  <p class="card-text">MARKTING PLAN</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card Profil 5 -->
+            <div class="col-4">
+              <div class="card">
+                <img src="assets/profil.png" class="card-img-top" alt="Profil 5">
+                <div class="card-body text-center">
+                  <h5 class="card-title">SURYA</h5>
+                  <p class="card-text">FINANCE & ACCOUNTING</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+  
+  
+</section>
+
+   
+    
+<br><br>
+    <section class="kontak-section" id="kontak">                  
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Kontak</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://wa.me/087766771477" target="_blank" style="color: #FFFFFF; text-decoration: none;">WhatsApp<br>087766771477</a></li>
+                <br>
+                <li><a href="mailto:info@example.com" style="color: #FFFFFF; text-decoration: none;">E-mail<br>@example.com</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Media Sosial</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/example/" target="_blank" style="color: #FFFFFF; text-decoration: none;">Instagram</a></li>
+                <li><a href="https://www.youtube.com/user/example" target="_blank" style="color: #FFFFFF; text-decoration: none;">Youtube</a></li>
+                <li><a href="https://twitter.com/example" target="_blank" style="color: #FFFFFF; text-decoration: none;">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Alamat Perusahaan</h4>
+              <address style="color: #FFFFFF;">
+                <a href="" style="color: #FFFFFF; text-decoration: none;">Komp. Permata Biru Blok AT No. 56 Jawa Barat Cileunyi Cinunuk</a>
+              </address>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <p style="color: #FFFFFF;">&copy; PT Raharja Energi Digdaya Group. Hak Cipta Dilindungi 2023.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+</body>
+</html>
